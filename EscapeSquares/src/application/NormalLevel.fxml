@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LevelController">
+   <children>
+      <Label fx:id="titleLabel" layoutY="14.0" prefHeight="59.0" prefWidth="892.0" text="EscapeSquares  --Normal Level--" />
+      <Button fx:id="leaveLabel" layoutX="685.0" layoutY="662.0" mnemonicParsing="false" onAction="#LeaveToMenu" prefHeight="49.0" prefWidth="87.0" text="Leave" />
+      <Label layoutX="648.0" layoutY="104.0" text="Time elapsed:" />
+      <Label layoutX="662.0" layoutY="330.0" text="Leaderboard" />
+      <ListView fx:id="leaderboardDesign" layoutX="628.0" layoutY="369.0" prefHeight="274.0" prefWidth="200.0" />
+      <Label fx:id="timerLabel" layoutX="633.0" layoutY="169.0" prefHeight="52.0" prefWidth="186.0" />
+      <Button fx:id="resetButton" layoutX="260.0" layoutY="662.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="87.0" text="Reset" />
+      <GridPane fx:id="gridPaneDesign" gridLinesVisible="true" layoutX="36.0" layoutY="99.0" prefHeight="517.0" prefWidth="507.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane">
+               <children>
+                  <ImageView fx:id="player" fitHeight="59.0" fitWidth="102.0" layoutX="-15.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/steve.png" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="5" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="6" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="5" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="6" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="7" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="8" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="4" GridPane.rowIndex="8" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="5" GridPane.rowIndex="8" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="6" GridPane.rowIndex="8" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="9" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="4" GridPane.rowIndex="9" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="5" GridPane.rowIndex="9" />
+            <Pane fx:id="finalPane" prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="6" GridPane.rowIndex="9">
+               <children>
+                  <ImageView fx:id="enemy" fitHeight="69.0" fitWidth="72.0" layoutX="15.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/zombie.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="goalLabel" layoutX="17.0" layoutY="15.0" text="GOAL" />
+               </children></Pane>
+         </children>
+      </GridPane>
+      <Button fx:id="startButton" layoutX="36.0" layoutY="630.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="167.0" text="Start" />
+      <Label fx:id="moveLabel" layoutX="605.0" layoutY="256.0" prefHeight="22.0" prefWidth="247.0" />
+   </children>
+</AnchorPane>

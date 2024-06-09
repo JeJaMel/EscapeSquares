@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="698.0" prefWidth="692.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LevelController">
+   <children>
+      <Label fx:id="titleLabel" layoutY="22.0" prefHeight="17.0" prefWidth="692.0" text="EscapeSquares  --Easy Level--" />
+      <GridPane fx:id="gridPaneDesign" gridLinesVisible="true" layoutX="43.0" layoutY="112.0" prefHeight="454.0" prefWidth="310.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="64.0" prefWidth="72.0" styleClass="mi-clase-pane" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.rowIndex="5" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Pane prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Pane fx:id="finalPane" prefHeight="200.0" prefWidth="200.0" styleClass="mi-clase-pane" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <children>
+                  <Label fx:id="goalLabel" layoutX="-16.0" layoutY="14.0" prefHeight="49.0" prefWidth="109.0" text="GOAL">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+         </children>
+      </GridPane>
+      <Button fx:id="resetButton" layoutX="153.0" layoutY="591.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="87.0" text="Reset" />
+      <Button fx:id="leaveLabel" layoutX="489.0" layoutY="591.0" mnemonicParsing="false" onAction="#LeaveToMenu" prefHeight="49.0" prefWidth="87.0" text="Leave" />
+      <Label layoutX="454.0" layoutY="102.0" text="Time elapsed:" />
+      <Label fx:id="moveLabel" layoutX="422.0" layoutY="249.0" prefHeight="21.0" prefWidth="230.0" />
+      <Label layoutX="468.0" layoutY="328.0" text="Leaderboard" />
+      <ListView fx:id="leaderboardDesign" layoutX="434.0" layoutY="367.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label fx:id="timerLabel" layoutX="459.0" layoutY="159.0" prefHeight="52.0" prefWidth="157.0" />
+      <ImageView fx:id="player" fitHeight="70.0" fitWidth="133.0" layoutX="-158.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/steve.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="startButton" layoutX="253.0" layoutY="573.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="167.0" text="Start" />
+      <ImageView fx:id="enemy" fitHeight="100.0" fitWidth="61.0" layoutX="-85.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/zombie.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

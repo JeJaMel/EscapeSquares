@@ -73,13 +73,13 @@
       <Label fx:id="timerLabel" layoutX="459.0" layoutY="159.0" prefHeight="52.0" prefWidth="157.0" />
       <ImageView fx:id="player" fitHeight="70.0" fitWidth="133.0" layoutX="-158.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Downloads/steve.png" />
+            <Image url="@../steve.png" />
          </image>
       </ImageView>
       <Button fx:id="startButton" layoutX="253.0" layoutY="573.0" mnemonicParsing="false" prefHeight="99.0" prefWidth="167.0" text="Start" />
       <ImageView fx:id="enemy" fitHeight="100.0" fitWidth="61.0" layoutX="-85.0" layoutY="299.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Downloads/zombie.png" />
+            <Image url="@../zombie.png" />
          </image>
       </ImageView>
    </children>

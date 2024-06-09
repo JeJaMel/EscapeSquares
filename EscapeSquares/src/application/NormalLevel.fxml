@@ -54,7 +54,7 @@
                <children>
                   <ImageView fx:id="player" fitHeight="59.0" fitWidth="102.0" layoutX="-15.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../Downloads/steve.png" />
+                        <Image url="@../steve.png" />
                      </image>
                   </ImageView>
                </children></Pane>
@@ -123,7 +123,7 @@
                <children>
                   <ImageView fx:id="enemy" fitHeight="69.0" fitWidth="72.0" layoutX="15.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../../../Downloads/zombie.png" />
+                        <Image url="@../zombie.png" />
                      </image>
                   </ImageView>
                   <Label fx:id="goalLabel" layoutX="17.0" layoutY="15.0" text="GOAL" />

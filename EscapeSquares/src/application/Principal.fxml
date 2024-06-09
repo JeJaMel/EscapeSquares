@@ -11,7 +11,7 @@
       <Label fx:id="titleLabel" layoutY="14.0" prefHeight="17.0" prefWidth="625.0" text="EscapeSquares" />
       <ImageView fitHeight="114.0" fitWidth="120.0" layoutX="255.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../Downloads/Icon.png" />
+            <Image url="@../Icon.png" />
          </image>
       </ImageView>
       <Button fx:id="easyButton" layoutX="261.0" layoutY="254.0" mnemonicParsing="false" onAction="#switchToEasy" prefHeight="51.0" prefWidth="103.0" text="Easy" />

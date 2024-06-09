@@ -14,8 +14,8 @@
             <Image url="@../Icon.png" />
          </image>
       </ImageView>
-      <Button fx:id="easyButton" layoutX="261.0" layoutY="254.0" mnemonicParsing="false" onAction="#switchToEasy" prefHeight="51.0" prefWidth="103.0" text="Easy" />
-      <Button fx:id="normalButton" layoutX="261.0" layoutY="364.0" mnemonicParsing="false" onAction="#switchToNormal" prefHeight="51.0" prefWidth="103.0" text="Normal" />
+      <Button fx:id="easyButton" layoutX="261.0" layoutY="366.0" mnemonicParsing="false" onAction="#switchToEasy" prefHeight="51.0" prefWidth="103.0" text="Normal" />
+      <Button fx:id="normalButton" layoutX="261.0" layoutY="254.0" mnemonicParsing="false" onAction="#switchToNormal" prefHeight="51.0" prefWidth="103.0" text="Easy" />
       <Button fx:id="exitButton" layoutX="261.0" layoutY="481.0" mnemonicParsing="false" onAction="#logout" prefHeight="51.0" prefWidth="103.0" text="Exit" />
       <Label fx:id="copyRighttext" layoutY="609.0" text="© 2024 Jejamel. Todos los derechos reservados." textFill="#c1c1c1" />
    </children>

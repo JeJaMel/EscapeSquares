@@ -13,7 +13,7 @@
 
 <AnchorPane fx:id="scenePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="892.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LevelController">
    <children>
-      <Label fx:id="titleLabel" layoutY="14.0" prefHeight="59.0" prefWidth="892.0" text="EscapeSquares  --Normal Level--" />
+      <Label fx:id="titleLabel" layoutY="14.0" prefHeight="59.0" prefWidth="892.0" text="EscapeSquares  --Easy Level--" />
       <Button fx:id="leaveLabel" layoutX="685.0" layoutY="662.0" mnemonicParsing="false" onAction="#LeaveToMenu" prefHeight="49.0" prefWidth="87.0" text="Leave" />
       <Label layoutX="648.0" layoutY="104.0" text="Time elapsed:" />
       <Label layoutX="662.0" layoutY="330.0" text="Leaderboard" />
